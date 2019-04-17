@@ -1,0 +1,52 @@
+'.text.html':
+  'php echo in html':
+    'prefix': '?'
+    'body': '<?= \$$1 ?>'
+
+  'cakephp-link':
+    'prefix': 'cklink'
+    'body': '<?= $this->Html->link(\'$1\', [${2:\'controller\'=>\'$3\', }\'action\'=>\'$4\']${5:, [\'class\'=>\'$6\']}) ?>'
+
+  'cakephp-image':
+    'prefix': 'ckimg'
+    'body': '<?= $this->Html->image(\'$1\', [\'alt\'=>\'$2\'${3:, \'class\'=>\'$4\'}]) ?>'
+
+  'cakephp-create-form':
+    'prefix': 'ckcreate'
+    'body': '<?= $this->Form->create(\$${1:entity}) ?>'
+
+  'cakephp-create-form-type-file':
+    'prefix': 'ckcreate-file'
+    'body': '<?= $this->Form->create(\$${1:entity}, [\'type\'=>\'${3:file}\']) ?>'
+
+  'cakephp-control':
+    'prefix': 'ckcontrol'
+    'body': '<?= $this->Form->control(\'$1\'${2:, [\'class\'=>\'$3\']}) ?>'
+
+  'cakephp-form-button':
+    'prefix': 'ckbtn'
+    'body': '<?= $this->Form->button(\'$1\') ?>'
+
+  'cakephp-form-end':
+    'prefix': 'ckform-end'
+    'body': '<?= $this->Form->end() ?>'
+
+  'cakephp-sort':
+    'prefix': 'cksort'
+    'body': '<?= $this->Paginator->sort(\'${1:field}\'${2:, \'${3:label}\'}) ?>'
+
+  'cakephp-element':
+    'prefix': 'ckelement'
+    'body': '<?= $this->element(\'${1:name}\'${2:, [\'${3:class}\'=>\'${4:class_name}\']}) ?>'
+
+  'cakephp-cell':
+    'prefix': 'ckcell'
+    'body': '<?= $this->cell(\'${1:name}\'${2:, [\$${3:pass}]}) ?>'
+
+  'cakephp-card-create':
+    'prefix': 'ckcard-create'
+    'body': '<?= $this->Card->create(\'${1:title}\'${2:, [\'${3:type}\'=>\'${4:info}\']}) ?>'
+
+  'cakephp-card-end':
+    'prefix': 'ckcard-end'
+    'body': '<?= $this->Card->end() ?>'
